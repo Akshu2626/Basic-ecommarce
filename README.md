@@ -1,46 +1,60 @@
-# Getting Started with Create React App
+# eCommerce App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A React-based eCommerce application with product filtering, sorting, and cart management features.
 
-## Available Scripts
+## Assumptions and Features
+- Users can filter products by multiple categories at once.
+- Users can sort products by price or name.
+- Cart items are stored in the browser's local storage to persist data across page reloads.
+- The application is built using React, Context API, React Router, and mock product data.
+- Filtering and sorting can be shared via URL to ensure state persistence even on page refresh and back navigation.
 
-In the project directory, you can run:
+## Setup and Run Instructions
 
-### `npm start`
+### Prerequisites:
+1. **Node.js** and **npm** should be installed on your machine. If not, install them from [Node.js](https://nodejs.org/).
+   
+2. **Clone the repository** to your local machine:
+   ```bash
+   git clone https://github.com/YOUR_USERNAME/ecommerce-app.git
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+3. **Navigate to the project directory:**
+    cd ecommerce-app
 
-### `npm test`
+4. **Install dependencies**
+    npm install
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+### Run the Application:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. **Start the development server**
+    npm start
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+2. Open the app in your browser at http://localhost:3000.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+### Features:
+Product Listing: Displays all products with filtering and sorting options.
+Filters: Multiple categories (e.g., electronics, fashion, etc.) to filter products.
+Sorting: Sort products by price (low to high, high to low) and by name (A-Z, Z-A).
+Cart Management: Add/remove products to/from the cart. Cart data is stored in local storage.
+Persistent Filters and Sorting: Filters and sorting criteria are applied via URL, so users can share links with active filters and sorting.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Limitations:
+The app currently doesn't handle authentication or payment processing.
+The product data is static and mocked (no real backend is used).
+There is no user login or account management feature implemented.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+### Additional Notes:
+React Router: Used for navigation between pages (Home, Product Details, Cart).
+Context API: Used for managing global state (cart data) across the application.
+Local Storage: Used for cart persistence across page reloads.
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Assumptions:
+Products are categorized as a static list in the mock API.
+Users are expected to apply filters and sorting before navigating, and those filters will persist in the URL.
+Known Issues:
+Sorting and filtering do not work with real-time backend data. If a real API was integrated, the UI would need adjustments to work asynchronously.
