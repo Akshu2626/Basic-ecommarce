@@ -1,6 +1,6 @@
-import React from 'react';
-import { useCart } from '../context/CartContext';
-import CartItem from '../components/cartItem/CartItem';
+import React from "react";
+import { useCart } from "../context/CartContext";
+import CartItem from "../components/cartItem/CartItem";
 
 const CartPage: React.FC = () => {
   const { cart, removeFromCart } = useCart();
@@ -17,7 +17,7 @@ const CartPage: React.FC = () => {
             id={item.id}
             title={item.title}
             price={item.price}
-            quantity={item.quantity}
+            quantity={item.quantity || 1}
             onRemove={removeFromCart}
           />
         ))
@@ -27,4 +27,4 @@ const CartPage: React.FC = () => {
 };
 
 export default CartPage;
-export {}
+export {};

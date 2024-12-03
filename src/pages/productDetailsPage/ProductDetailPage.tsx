@@ -19,13 +19,18 @@ const ProductDetailPage: React.FC = () => {
 
   if (!product) return <p>Loading...</p>;
 
+  const handleAddToCart = () => {
+    // Add product with unique ID to cart and localStorage
+    addToCart(product);
+  };
+
   return (
     <div className="product-detail-page">
-      <img src={product.image} alt="" className="product-img" />
+      <img src={product.image} alt={product.title} className="product-img" />
       <h1>{product.title}</h1>
       <p>{product.description}</p>
       <p>Price: ${product.price}</p>
-      <button onClick={() => addToCart(product)} className="custom-btn btn-12">
+      <button onClick={handleAddToCart} className="custom-btn btn-12">
         <span> Add to Cart! </span>
       </button>
     </div>
@@ -33,4 +38,3 @@ const ProductDetailPage: React.FC = () => {
 };
 
 export default ProductDetailPage;
-export {};
