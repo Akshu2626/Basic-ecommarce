@@ -25,15 +25,18 @@ A React-based eCommerce application with product filtering, sorting, and cart ma
 
 
 3. **Navigate to the project directory:**
+   ```bash
     cd ecommerce-app
 
 4. **Install dependencies**
+   ```bash
     npm install
 
 
 ### Run the Application:
 
 1. **Start the development server**
+   ```bash
     npm start
 
 2. Open the app in your browser at http://localhost:3000.
