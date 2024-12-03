@@ -1,4 +1,4 @@
-/* Product Card Container */
+
 .product-card {
     background-color: #ffffff;
     border: 1px solid #e0e0e0;
@@ -14,7 +14,7 @@
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
   }
   
-  /* Product Image with Reflection */
+  
   .product-card img {
     max-width: 100%;
     height: auto;
@@ -42,7 +42,7 @@
     z-index: -1;
   }
   
-  /* Product Title */
+  
   .product-card h2 {
     font-size: 18px;
     color: #333;
@@ -52,7 +52,7 @@
     overflow: hidden;
   }
   
-  /* Product Price */
+  
   .product-card p {
     font-size: 16px;
     color: #007bff;
@@ -60,7 +60,7 @@
     margin-bottom: 15px;
   }
   
-  /* View Details Link */
+  
   .product-card a {
     display: inline-block;
     padding: 10px 20px;

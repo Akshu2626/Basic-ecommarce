@@ -43,7 +43,7 @@
   width: 250px;
 }
 
-/* Cart icon and badge */
+
 .cart-box {
   display: flex;
   align-items: center;
@@ -67,9 +67,6 @@
   font-weight: bold;
 }
 
-/* Responsive styles */
-
-/* Tablet view adjustments */
 @media (max-width: 768px) {
   .nav-search {
     width: 150px;
@@ -81,7 +78,7 @@
   }
 }
 
-/* Mobile view adjustments */
+
 @media (max-width: 480px) {
   .navbar {
     flex-direction: column;

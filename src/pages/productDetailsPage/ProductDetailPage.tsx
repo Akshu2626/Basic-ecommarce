@@ -20,7 +20,7 @@ const ProductDetailPage: React.FC = () => {
   if (!product) return <p>Loading...</p>;
 
   const handleAddToCart = () => {
-    // Add product with unique ID to cart and localStorage
+    
     addToCart(product);
   };
 
